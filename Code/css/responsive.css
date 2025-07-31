@@ -1,0 +1,118 @@
+
+
+/* Responsive Layout */
+
+/* Desktop: 3 per row (default) */
+@media (min-width: 992px) {
+  .project-card,
+  .more-card {
+    flex: 1 1 calc(33.333% - 30px);
+  }
+}
+
+/* Tablet: 2 per row */
+@media (max-width: 991px) and (min-width: 768px) {
+  .project-card,
+  .more-card {
+    flex: 1 1 calc(50% - 30px);
+  }
+}
+
+/* Mobile: 1 per row */
+@media (max-width: 767px) {
+  .project-card,
+  .more-card {
+    flex: 1 1 100%;
+    min-height: 260px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+  }
+
+  .centered-button .btn {
+    max-width: 220px;
+  }
+}
+
+/* Optional: Update button text on toggle */
+.show-more-toggle:checked ~ .centered-button label[for="show-more"]::after {
+  content: " (Show Less)";
+  font-size: 0.9em;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left img {
+    margin-bottom: 30px;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+    .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    justify-content: center;
+  }
+
+  .about-text .line {
+    display: none;
+  }
+
+  .about-image img {
+    width: 70%;
+  }
+
+
+  /* My-Resume-Section */
+  .content > div {
+    display: block;
+    width: 100%;
+  }
+
+  .right {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav a.btn {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+
+  
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

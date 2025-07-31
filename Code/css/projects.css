@@ -1,0 +1,207 @@
+/***************** Projects Section *****************/
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+
+/* Section Title & Subtitle */
+.section-title {
+  font-size: 2.5rem;
+  color: #ff9500;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #8e9bb5;
+  text-align: center;
+  margin-bottom: 50px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hidden Toggle Checkbox */
+.show-more-toggle {
+  display: none;
+}
+
+/* Project Cards Grid */
+.project-cards {
+  display: grid;
+  gap: 50px;
+  margin-bottom: 50px;
+
+  /* Default: 3 columns on desktop */
+  grid-template-columns: repeat(3, 1fr);
+
+  /* Tablet: 2 columns */
+  @media (max-width: 991px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Mobile: 1 column */
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Project Card */
+.project-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  min-height: 280px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+
+}
+
+.project-card:hover .project-image {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+/* Card Image as Background */
+.project-card .project-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  z-index: -1;
+}
+
+/* Title & Buttons */
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.project-card .buttons {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 2;
+}
+
+/* Show on hover */
+.project-card:hover h3,
+.project-card:hover .buttons {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-live-demo {
+  background-color: #ff9500;
+  color: #fff;
+}
+
+.btn-live-demo:hover {
+  background-color: #e58700;
+  transform: scale(1.05);
+}
+
+.btn-github-link {
+  background-color: #8e9bb5;
+  color: #fff;
+}
+
+.btn-github-link:hover {
+  background-color: #7c8db5;
+  transform: scale(1.05);
+}
+
+/* "View More" Button */
+.centered-button {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.centered-button .btn {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+}
+
+/* Hidden Extra Cards */
+.more-card {
+  display: none;
+  opacity: 0;
+  animation: none;
+}
+
+/* Reveal Hidden Cards When Toggled */
+.show-more-toggle:checked ~ .project-cards .more-card {
+  display: flex; /* Match .project-card */
+  opacity: 1;
+  animation: fadeInUp 0.4s forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*Change button text after click */
+/* Show "View More" by default, hide "Show Less" */
+.centered-button .btn .btn-text-show {
+  display: inline;
+}
+
+.centered-button .btn .btn-text-hide {
+  display: none;
+}
+
+/* When toggled: hide "View More", show "Show Less" */
+.show-more-toggle:checked ~ .centered-button .btn .btn-text-show {
+  display: none;
+}
+
+.show-more-toggle:checked ~ .centered-button .btn .btn-text-hide {
+  display: inline;
+}
