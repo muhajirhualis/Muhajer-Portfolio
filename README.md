@@ -22,7 +22,7 @@ The goal of this project is to build a clean, responsive, and visually engaging 
 Before writing any code, I designed the complete user interface and layout using **Adobe XD** to ensure a modern, intuitive, and mobile-friendly experience.
 
 > 📁 **Design File**:  
-[📁 `/design/Portfolio-Design.adobeXD`](./design/Portfolio-Design.adobeXD)
+[📁 `/design/Portfolio-Design.adobeXD`](./design/newportfolio.xd)
 
 ---
 
