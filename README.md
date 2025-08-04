@@ -45,91 +45,12 @@ muhajer-portfolio/
 ## 📚 Website Sections
 
 ### 🧑‍💻 About Me
-
-A concise introduction to my background, career evolution, and motivation for transitioning into software development with a focus on health tech innovation.
-
----
-
 ### 🛠️ Skills
-
-#### Programming Languages
-- HTML5, CSS3, JavaScript, TypeScript, C#
-
-#### Frameworks & Tools
-- React, Node.js, Express, Git, GitHub
-
-#### Platforms
-- Vercel, Netlify
-
----
-
 ### 🎓 Education
-
-- **BSc in Nursing**  
-  Jimma University, Ethiopia  
-  🎓 CGPA: 3.91  
-  📄 [Download My CV](https://your-cv-link.com)
-
----
-
 ### 💡 Interests
-
-- Web & Mobile Application Development  
-- Digital Healthcare Solutions  
-- Full-Stack Development  
-- Technology for Social Impact  
-
----
-
 ### 🏗️ Projects
-
-A selection of key projects that demonstrate my full-stack capabilities:
-
-#### 📌 Amazon Clone
-An eCommerce UI replica with responsive design and modern styling.
-
-#### 📌 Evangadi Forum
-A full-stack discussion platform built during my bootcamp training.
-
-#### 📌 Garage Management App
-A CRUD application for managing customer appointments and garage services.
-
-> 🔗 **More Details**:  
-[Projects Section](https://muhajer-portfolio.vercel.app/#projects)
-
----
-
 ### 💼 Professional Experience
-
-#### Assistant Lecturer  
-**Werabe University, Ethiopia** | Mar 2023 – Present  
-- Teaching and mentoring nursing students.  
-- Contributing to curriculum development.
-
-#### Full-Stack Developer  
-**BRIDGE Health Nexus, Addis Ababa** | May 2024 – Present  
-- Developing healthcare-focused web applications.  
-- Building scalable full-stack solutions using modern frameworks.
-
-#### Full-Stack Web Development Trainee  
-**Evangadi Tech Bootcamp, USA** | Jun 2023 – Jan 2024  
-- Intensive training in front-end and back-end technologies.  
-- Hands-on experience with real-world projects.
-
-#### Nurse Practitioner  
-**Werabe Comprehensive Specialized Hospital** | Sept 2021 – Mar 2023  
-- Provided clinical care and patient management.  
-- Gained deep insight into healthcare systems and workflows.
-
-![Experience](https://muhajer-portfolio.vercel.app/img/experience.png)
-
----
-
 ### 📬 Contact Me
-
-The website features a responsive and functional **Contact Form** for seamless communication. You can also reach me directly via email:
-
-📧 [muhajer@example.com](mailto:muhajer@example.com)
 
 ---
 
@@ -146,21 +67,6 @@ Hosted with speed and reliability using **Vercel**, ensuring global performance 
 - ✅ Frontend Observability & Analytics  
 - ✅ Instant Rollbacks for safe deployments  
 - ✅ Zero-config global CDN for fast load times  
-
----
-
-## ✅ Submission Checklist
-
-| Requirement                     | Status |
-|-------------------------------|--------|
-| All required sections included | ✅     |
-| Adobe XD design file included  | ✅     |
-| Hosted live on Vercel          | ✅     |
-| Public GitHub repository       | ✅     |
-| Working contact form           | ✅     |
-| CV download available          | ✅     |
-| Clean, responsive HTML/CSS     | ✅     |
-| Complete README.md             | ✅     |
 
 ---
 
