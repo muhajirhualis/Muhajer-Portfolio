@@ -23,7 +23,7 @@ The goal of this project is to develop a responsive, well-structured, and visual
 Before coding, I started by designing the entire website layout and structure using **Adobe XD**. This helped me visualize the user interface and ensure a clean, user-friendly experience across all devices.
 
 > 📁 You can find my Adobe XD design file included in this repository:  
-[`/design/Portfolio-Design.adobeXD`](./design/Portfolio-Design.adobeXD)
+[`/design/Portfolio-Design.adobeXD`](./designs/new portfolio.xd)
 
 ---
 
