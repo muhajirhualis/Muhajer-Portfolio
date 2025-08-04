@@ -1,57 +1,84 @@
 /***************** About Section *****************/
 
+
+/* About Section */
 .about-section {
   padding: 60px 50px;
-  background-color: #0c0f18;
-  color: #c0c6d1;
+  background-color: #0c0f18; /* Dark background */
+  color: #c0c6d1; /* Light text color */
 }
 
 .about-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 50px;
-  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+/* Profile Image */
 .about-image {
   flex: 1;
-  max-width: 350px;
-  text-align: center;
+  max-width: 300px;
+  position: relative;
+  z-index: 1;
 }
 
 .about-image img {
   width: 100%;
-  border-radius: 40%;
-  border: 4px solid #f7931e;
-  padding: 8px;
-  background-color: #7a87b8;
-  clip-path: ellipse(50% 70% at 50% 50%);
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid #FF7B00; /* Orange border */
+  box-shadow: 0 4px 16px rgba(255, 123, 0, 0.3); /* Subtle shadow */
+  transition: transform 0.3s ease;
 }
 
+.about-image img:hover {
+  transform: translateY(-5px);
+}
+
+/* About Text */
 .about-text {
   flex: 2;
   max-width: 700px;
 }
 
 .about-text h2 {
-  color: #f7931e;
-  font-size: 28px;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 20px;
+  color: #FF7B00; /* Orange title */
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.about-text .line {
-  flex-grow: 1;
-  height: 6px;
-  background-color: #f7931e;
-  border-radius: 5px;
+.about-text h2::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #FF7B00;
+  margin-top: 5px;
 }
 
 .about-text p {
-  font-size: 17px;
-  line-height: 1.8;
-  color: #b5bdd4;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #b5bdd4; /* Light gray description */
+  margin-top: 20px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-image {
+    margin-bottom: 20px;
+  }
+
+  .about-image img {
+    max-width: 250px;
+  }
 }

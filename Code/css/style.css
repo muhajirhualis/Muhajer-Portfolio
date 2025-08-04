@@ -3,48 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   background: #0c0f18;
   color: white;
   line-height: 1.6;
 }
 
-
-
-
-
-
-/* Testimonials Section */
-.testimonials-section {
-  background: #101522;
-  color: #fff;
-  padding: 60px 20px;
-  text-align: center;
-}
-.testimonials-title {
-  color: #ff9500;
-  font-size: 2rem;
-  margin-bottom: 32px;
-}
-.testimonials-cards {
-  display: flex;
-  gap: 32px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.testimonial-card {
-  background: rgba(255,255,255,0.05);
-  border-radius: 12px;
-  padding: 24px 18px;
-  max-width: 320px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  font-style: italic;
-}
-.testimonial-card span {
-  display: block;
-  margin-top: 12px;
-  color: #ff9500;
-  font-weight: bold;
-}

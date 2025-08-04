@@ -1,11 +1,18 @@
 /***************** Header *****************/
 
 header {
+ position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000;
+  transition: background 0.3s ease;
   padding: 20px 50px;
-  background-color: transparent;
+  background-color: #181C2F;
 }
 
 .logo {
@@ -15,7 +22,6 @@ header {
 
 .logo img {
   width: 40px;
-  margin-right: 10px;
 }
 
 .logo h1 {
@@ -23,7 +29,7 @@ header {
   color: #fff;
 }
 
-.logo h1 span {
+.logo h1 {
   color: #f7931e;
 }
 
@@ -44,22 +50,6 @@ nav a:hover {
   color: #f7931e;
 }
 
-
-/* Fixed Header */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* background: white; */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  transition: background 0.3s ease;
-}
 
 /* Logo & Nav Styles */
 .logo {
@@ -94,50 +84,80 @@ header {
 }
 
 
-body {
+
+/* Base styles for navbar */
+
+
+/* Navigation menu (default: flex on desktop) */
+.nav-menu {
+  display: flex;
+  list-style: none;
   margin: 0;
-  padding-top: 80px; /* Makes sure #home or hero section isn't hidden under header */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  min-height: 100vh;
+  padding: 0;
+  gap: 1.5rem;
 }
 
-/* Light Theme (default) */
-
-/* .site-wrapper {
-  background: white;
-  color: #333;
-  transition: background 0.4s ease, color 0.4s ease;
-} */
-
-/* Dark Theme */
-/* 
-#theme-toggle:checked ~ .site-wrapper {
-  background: #1a1a1a;
-  color: #f0f0f0;
-}
-
-#theme-toggle:checked ~ .site-wrapper header {
-  background: #2a2a2a;
-  color: #f0f0f0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
-#theme-toggle:checked ~ .site-wrapper .hero {
-     background-image: url(  '../img/Picture1.png');
-  background-size: cover;
-  background-position: center;
-  color: #1a1a1a;
-}
-
-#theme-toggle:checked ~ .site-wrapper .navbar ul li a {
-  color: #f0f0f0;
-}
-
-.theme-toggle-btn{
-  position: fixed;
-  top: 27px;
-  right: 50px;
-  z-index: 1001;
-  cursor: pointer;
-  font-size: 24px;
+.nav-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
   transition: color 0.3s ease;
-} */
+}
+
+.nav-menu a:hover {
+  color: #ff7b00;
+}
+
+/* Toggle Button (Hamburger) */
+.nav-toggle-btn {
+  display: none; /* Hidden on desktop */
+  flex-direction: column;
+  cursor: pointer;
+  width: 30px;
+  height: 22px;
+  justify-content: space-between;
+}
+
+.nav-toggle-btn span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #333;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* Show menu on mobile when checkbox is checked */
+#nav-toggle:checked ~ .nav-menu {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 1rem 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .nav-toggle-btn {
+    display: flex; /* Show hamburger only on mobile */
+  }
+
+  .nav-menu {
+    display: none; /* Hide menu by default on mobile */
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0.5rem 2rem;
+  }
+
+  .nav-menu a {
+    color: #333;
+    padding: 0.5rem 0;
+  }
+
+  
+}
