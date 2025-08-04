@@ -1,0 +1,27 @@
+
+/* Light Mode Styles */
+.theme-toggle-checkbox:checked ~ .site-wrapper {
+  background: #f5f5f5;
+  color: #222;
+}
+.theme-toggle-checkbox:checked ~ .site-wrapper header,
+.theme-toggle-checkbox:checked ~ .site-wrapper .about-section,
+.theme-toggle-checkbox:checked ~ .site-wrapper .projects-container,
+.theme-toggle-checkbox:checked ~ .site-wrapper .skills-section,
+.theme-toggle-checkbox:checked ~ .site-wrapper .testimonials-section,
+.theme-toggle-checkbox:checked ~ .site-wrapper .contact-section {
+  background: #fff;
+  color: #222;
+}
+.theme-toggle-checkbox:checked ~ .site-wrapper .section-title,
+.theme-toggle-checkbox:checked ~ .site-wrapper .skills-title,
+.theme-toggle-checkbox:checked ~ .site-wrapper .testimonials-title,
+.theme-toggle-checkbox:checked ~ .site-wrapper .contact-title {
+  color: #ff9500;
+}
+.theme-toggle-checkbox:checked ~ .site-wrapper .project-card,
+.theme-toggle-checkbox:checked ~ .site-wrapper .skills-category,
+.theme-toggle-checkbox:checked ~ .site-wrapper .testimonial-card {
+  background: rgba(0,0,0,0.04);
+  color: #222;
+}
